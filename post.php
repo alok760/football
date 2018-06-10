@@ -3,10 +3,9 @@ $conn = new mysqli("localhost", "root", "", "football");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-  echo 
-for( $i = 0; $i<5; $i++ ){
-  $sql = "INSERT INTO f1 (adidas)
-  VALUES (0)";
+for( $i = 0; $i<5400; $i++ ){
+  $sql = "INSERT INTO f1 ()
+  VALUES ()";
   if ($conn->query($sql) === TRUE) {
 
   } else {

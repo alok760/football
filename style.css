@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.btn{
+    margin:10px;
+}
+#str{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tag{
+    border-radius: 50%;
+}
+.my_row{
+    margin: 20px;
+    background: white;
+    border: black 1px;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.text-center{
+    padding-top: 20px;
+}
+.wrap_row .row{
+    margin-left: 20px;
+}
+
+.ss{
+  font-size: 2em
+}
