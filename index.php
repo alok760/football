@@ -91,6 +91,11 @@
 
             </div>
           </form>
+          <form action="export.php" method="POST">
+          <div class="row border" style="margin:50px;">
+              <div class="col"> <button class="btn btn-block" onclick="start()">Download Spreadsheet</button> </div>
+          </div>
+          </form>
 
         </div>
     </body>

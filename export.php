@@ -1,4 +1,11 @@
 <?php
+
+
+$file = fopen("tname.txt", "r") or die("Unable to open file!");
+$table = fgets($file);
+fclose($file);
+
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -16,8 +23,8 @@ else
 }
 
 
-$DB_TBLName = "alok";
-$filename = "excelfilename";  //your_file_name
+$DB_TBLName = "$table";
+$filename = "$table";  //your_file_name
 $file_ending = "xls";   //file_extention
 
 header("Content-Type: application/xls");
