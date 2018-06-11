@@ -8,9 +8,15 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <button id="str" class="btn btn-block" onclick="start()">START</button>
+          <form action="create.php" method="POST">
+            <div class="row border" style="margin:50px;">
+
+
+                <div class="col"> <input class="form-control" style="margin:10px;" type="text" value="Table-Name" name="tname"> </div>
+                <div class="col"> <button class="btn btn-block" onclick="start()">START</button> </div>
+
             </div>
+            </form>
             <form action="ind.php" method="POST">
             <div class="row wrap_row">
                 <div class="col-sm-6">

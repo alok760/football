@@ -1,8 +1,11 @@
 <?php
+$file = fopen("tname.txt", "r") or die("Unable to open file!");
+$table = fgets($file);
+fclose($file);
 
 $mytime=gettimeofday();
 $curr = (int)"$mytime[sec]";
-$myfile = fopen("newfile.txt", "r") or die("Unable to open file!");
+$myfile = fopen("time.txt", "r") or die("Unable to open file!");
 $old = (int)fgets($myfile);
 fclose($myfile);
 $diff = (int)$curr - (int)$old;
@@ -16,7 +19,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "UPDATE f1 SET `$fname`=1 WHERE time = '$diff'";
+$sql = "UPDATE `$table` SET `$fname`=1 WHERE time = '$diff'";
 
 
 if ($conn->query($sql) === TRUE) {
